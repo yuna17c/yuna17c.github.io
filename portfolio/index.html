@@ -56,6 +56,8 @@
             <h1>RESUME</h1>
             <h2>More of my experience and skills.</h2>
         </div>
+
+        <!--skills/edu-->
         <section class="first-row">
             <div class="resume-skills">
                 <h2 id="title">SKILLS</h2>
@@ -121,41 +123,113 @@
                     <div class="edu-cont uw">
                         <img src="uwaterloo.png" alt="UWaterloo">
                         <div class="school">
-                            <h2>University of Waterloo</h2>
+                            <h2>University of Waterloo (class of 2025)</h2>
                             <p>• Candidate for Bachelor of Computing and Financial Management</p> 
-                            <p>• GPA: 4.0 (96.75%)</p> 
+                            <p>• GPA: 4.0 (97.0%)</p> 
                         </div>
                     </div>
                 </div>              
             </div>
         </section>
-        <section class="resume-prj">
+        
+        <!--projects-->
+        <section class="resume-prj" id="hello">
             <h2>PROJECTS</h2>
+            <p>Click for more details.</p>
             <div class="prj-list">
-                <div class="prj">
-                    <h1>RACK-O</h1>
+                <div class="prj" id="myBtn">
+                    <div class="top"><h1>Rack-O</h1></div>
+                    <div><p>Single&multiplayer card game</p></div> 
                 </div>
-                <div class="prj">
-                    <h1>Game</h1>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Rack-O</h2>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <p>An online implementation of the card game Rack-O using Python.</p>
+                            <a href="https://github.com/yuna17c/Rack-O"><p>GitHub Link</p></a>
+                        </div>
+                        <div class="modal-footer">
+                            <img src="racko-pic/2.jpg" alt="Rack-O">
+                            <img src="racko-pic/4.jpg" alt="Rack-O">
+                            <img src="racko-pic/7.jpg" alt="Rack-O">
+                        </div>
+                    </div>
                 </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on the button, open the modal
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
                 <div class="prj">
-                    <h1>smth</h1>
+                    <div class="top"><h1>Cyber Bugs</h1></div>
+                    <div><p>Single player adventure game</p></div>
+                    <div id="myModal2" class="modal2">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Cyber Bugs</h2>
+                                <span class="close2">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <p>An online implementation of the card game Rack-O using Python.</p>
+                                <a href="https://github.com/yuna17c/Cyber-Bugs"><p>Link</p></a>
+                            </div>
+                            <div class="modal-footer">
+                                <img src="racko-pic/2.jpg" alt="Rack-O">
+                                <img src="racko-pic/4.jpg" alt="Rack-O">
+                                <img src="racko-pic/7.jpg" alt="Rack-O">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prj">
+                    <div class="top"><h1>Yarncraft</h1></div>
+                    <div><p>Crochet shop website</p></div>
                 </div>
             </div>
         </section>
+
+        <!--experience-->
         <section class="resume-exp">
             <h2>EXPERIENCE</h2>
             <div class="exp-list">
-                <div class="exp">
-                    <a href="https://www.marcandrei.com/"><i class="fas fa-chalkboard-teacher"></i></a>
+                <a href="https://www.marcandrei.com/"><div class="exp">
+                    <i class="fas fa-chalkboard-teacher"></i>
                     <h1>Tutor</h1>
                     <p>Private tutoring at Marc Andrei Tutoring • 2 years</p>
-                </div>
-                <div class="exp">
-                    <a href="https://haltonhamilton.bigbrothersbigsisters.ca/"><i class="fas fa-hand-holding-heart"></i></a>
-                    <h1>Big Brothers Big Sisters</h1>
-                    <p>Homework club • One-on-one mentoring • 4 years</p>
-                </div>
+                </div></a>
+                <a href="https://haltonhamilton.bigbrothersbigsisters.ca/">
+                    <div class="exp">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h1>Big Brothers Big Sisters</h1>
+                        <p>Homework club • One-on-one mentoring • 4 years</p>
+                    </div></a>
                 <div class="exp">
                     <i class="fas fa-shopping-basket"></i>
                     <h1>Sobeys</h1>
@@ -165,6 +239,7 @@
         </section>
     </section>
 
+    <!--contact-->
     <section class="contact" id="contact">
         <div class="contact-head">
             <h1>CONTACT</h1>

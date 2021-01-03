@@ -264,7 +264,7 @@ body {
     align-self: center;
 }
 
-.edu p { font-size: 16px; align-self: center;}
+.edu p {font-size: 16px; align-self: center;}
 .school {
     display: grid;
     grid-template-rows: 34% 33% 33%;
@@ -272,7 +272,6 @@ body {
     height: auto;
 }
 .school .ib {padding-left: 8px;}
-
 /*contact*/
 .contact {
     text-align: center;
@@ -318,12 +317,22 @@ p1 {
 .contact p {font-size: 18px;}
 #socials-link:hover {text-decoration: underline;}
 
+/*resume project*/
 .resume-prj {
     padding-top:50px;
 }
 .resume-prj h2 {
     font-size: 25px;
+}
+.resume-prj h1 {
+    font-size: 20px;
+    color: black;
+    letter-spacing: 0em;
     align-self: center;
+}
+.resume-prj p {
+    color: black;
+    justify-self: center;
 }
 .prj-list {
     display: grid;
@@ -335,11 +344,20 @@ p1 {
 }
 .prj {
     display: grid;
-    grid-template-rows: 40% 30% 30%;
+    grid-template-rows: 1fr 1fr;
     width: 100%;
     height:auto;
-    padding: 20px;
     background-color: #ddd;
+    align-items: center;
+    padding: 10px;
+    grid-gap: 15px;
+}
+.top h1 {
+    text-decoration: none ;
+    transition: underline 200ms ease;
+}
+.top h1:hover {
+    text-decoration: underline;
 }
 
 .resume-exp h1 {
@@ -549,4 +567,103 @@ p1 {
 }
 @media screen and (max-width: 280px) {
     .nav-item {font-size: 3.15vw;}
+}
+ /* The Modal (background) */
+ .modal-footer img{
+     width:100%;
+     height:auto;
+     margin:0 auto;
+ }
+
+ .modal,
+ .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content,
+  .modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close,
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus,
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ .modal,
+ .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0px;
+    padding-top:100px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+/* Modal Header */
+.modal-header {
+    padding: 8px 16px;
+}
+  
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding: 8px 16px;
+    grid-gap: 8px;
+}
+
+/* Modal Content */
+.modal-content,
+.modal-content2 {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
 }
