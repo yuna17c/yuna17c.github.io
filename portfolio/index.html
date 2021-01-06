@@ -74,7 +74,7 @@
                     <div class="sub">
                         <div class="sub-sub">
                             <p class="name">CSS</p>
-                            <p class="per eig">80%</p> 
+                            <p class="per eigfiv">85%</p> 
                         </div>
                         <div class="container">
                             <div class="skills css">a</div>
@@ -83,7 +83,7 @@
                     <div class="sub">
                         <div class="sub-sub">
                             <p class="name">Python</p>
-                            <p class="per nin">90%</p> 
+                            <p class="per ninfiv">95%</p> 
                         </div>
                         <div class="container">
                             <div class="skills python">a</div>
@@ -92,10 +92,10 @@
                     <div class="sub">
                         <div class="sub-sub">
                             <p class="name">MS Word</p>
-                            <p class="per eigfiv">85%</p> 
+                            <p class="per eigeig">88%</p> 
                         </div>
                         <div class="container">
-                            <div class="skills ms">a</div>
+                            <div class="skills msw">a</div>
                         </div>
                     </div>   
                     <div class="sub">
@@ -104,7 +104,7 @@
                             <p class="per eigfiv">85%</p> 
                         </div>
                         <div class="container">
-                            <div class="skills ms">a</div>
+                            <div class="skills mse">a</div>
                         </div>
                     </div>     
                 </div>
@@ -137,19 +137,26 @@
             <h2>PROJECTS</h2>
             <p>Click for more details.</p>
             <div class="prj-list">
-                <div class="prj" id="myBtn">
+                <div class="prj">       <!--RACKO-->
                     <div class="top"><h1>Rack-O</h1></div>
-                    <div><p>Single&multiplayer card game</p></div> 
+                    <p>Single&multiplayer card game</p>
+                    <div class="links">
+                        <button id="myBtn">Details</button>
+                        <button><a href="https://github.com/yuna17c/Rack-O">GitHub</a></button>
+                    </div> 
                 </div>
-                <div id="myModal" class="modal">
+                <div id="myModal" class="modal">    <!--RACKO MODAL-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <h2>Rack-O</h2>
                             <span class="close">&times;</span>
                         </div>
                         <div class="modal-body">
-                            <p>An online implementation of the card game Rack-O using Python.</p>
-                            <a href="https://github.com/yuna17c/Rack-O"><p>GitHub Link</p></a>
+                            <ul>
+                                <li>An online implementation of the card game Rack-O using Python and the Pygame environment.</li>
+                                <li>Includes a single player and 2 player mode, leaderboard and settings</li>
+                                <li>Incorporated a login system that saves scores, checks for invalid inputs and allows for account removals.</li>
+                            </ul>                            
                         </div>
                         <div class="modal-footer">
                             <img src="racko-pic/2.jpg" alt="Rack-O">
@@ -158,7 +165,6 @@
                         </div>
                     </div>
                 </div>
-
                 <script>
                     // Get the modal
                     var modal = document.getElementById("myModal");
@@ -186,28 +192,62 @@
                         }
                     }
                 </script>
-                <div class="prj">
+
+                <div class="prj">       <!--CYBER BUGS-->
                     <div class="top"><h1>Cyber Bugs</h1></div>
                     <div><p>Single player adventure game</p></div>
-                    <div id="myModal2" class="modal2">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h2>Cyber Bugs</h2>
-                                <span class="close2">&times;</span>
-                            </div>
-                            <div class="modal-body">
-                                <p>An online implementation of the card game Rack-O using Python.</p>
-                                <a href="https://github.com/yuna17c/Cyber-Bugs"><p>Link</p></a>
-                            </div>
-                            <div class="modal-footer">
-                                <img src="racko-pic/2.jpg" alt="Rack-O">
-                                <img src="racko-pic/4.jpg" alt="Rack-O">
-                                <img src="racko-pic/7.jpg" alt="Rack-O">
-                            </div>
+                    <div class="links">
+                        <button id="myBtn2">Details</button>
+                        <button><a href="https://github.com/yuna17c/Cyber-Bugs">GitHub</a></button>
+                    </div>  
+                </div>                   
+                <div id="myModal2" class="modal2">      <!--CYBER BUGS MODAL-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Cyber Bugs</h2>
+                            <span class="close2">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Single player adventure game using Python and the Pygame environment.</li>
+                                <li>Includes shop, inventory and multiple stages with different game objectives</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <img src="racko-pic/2-1.jpg" alt="Cyber-Bugs">
+                            <img src="racko-pic/2-2.jpg" alt="Cyber-Bugs">
+                            <img src="racko-pic/2-4.jpg" alt="Cyber-Bugs">
                         </div>
                     </div>
-                </div>
-                
+                </div>       
+                <script>
+                    // Get the modal
+                    var modal2 = document.getElementById("myModal2");
+
+                    // Get the button that opens the modal
+                    var btn2 = document.getElementById("myBtn2");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close2")[0];
+
+                    // When the user clicks on the button, open the modal
+                    btn2.onclick = function() {
+                        modal2.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal2.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal2) {
+                            modal2.style.display = "none";
+                        }
+                    }
+                </script>
+
                 <div class="prj">
                     <div class="top"><h1>Yarncraft</h1></div>
                     <div><p>Crochet shop website</p></div>
@@ -222,7 +262,7 @@
                 <a href="https://www.marcandrei.com/"><div class="exp">
                     <i class="fas fa-chalkboard-teacher"></i>
                     <h1>Tutor</h1>
-                    <p>Private tutoring at Marc Andrei Tutoring • 2 years</p>
+                    <p>A private tutor at Marc Andrei Tutoring • 2 years</p>
                 </div></a>
                 <a href="https://haltonhamilton.bigbrothersbigsisters.ca/">
                     <div class="exp">
