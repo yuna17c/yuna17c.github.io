@@ -218,8 +218,9 @@ body {
     padding-bottom: 6px;
 }
 .sub-sub .nin {width: 80%;}
-.sub-sub .eig {width: 60%;}
 .sub-sub .eigfiv {width: 70%;}
+.sub-sub .eigeig {width: 75%}
+.sub-sub .ninfiv {width:90%}
 .name {text-align: left;}
 .per {text-align: right;}
 .container { 
@@ -230,9 +231,10 @@ body {
     padding:0px;
 }
 .html {width: 90%; background-color: #4CAF50;color:#4CAF50} 
-.css {width: 80%; background-color: #2196F3;color:#2196F3} 
-.python {width: 90%; background-color: #f44336;color:#f44336}
-.ms {width: 85%; background-color: #808080;color:#808080} 
+.css {width: 85%; background-color: #2196F3;color:#2196F3} 
+.python {width: 95%; background-color: #f44336;color:#f44336}
+.msw {width: 88%; background-color: #ffcf4a;color:#ffcf4a} 
+.mse {width: 85%; background-color: #808080;color:#808080} 
 
 .edu-list {
     display:grid;
@@ -342,15 +344,25 @@ p1 {
     margin: 0 auto;
     grid-gap: 30px;
 }
+.links {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+}
+.resume-prj button {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    padding: 3px;
+}
 .prj {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
     height:auto;
     background-color: #ddd;
     align-items: center;
     padding: 10px;
-    grid-gap: 15px;
+    grid-gap: 5px;
 }
 .top h1 {
     text-decoration: none ;
@@ -390,6 +402,7 @@ p1 {
 .resume-exp .fas {
     font-size: 65px;
     padding: 7px;
+    color: black;
 }
 
 @media screen and (min-width: 500px) and (max-width: 920px) {
@@ -638,7 +651,7 @@ p1 {
 }
   
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 5px 16px;text-align: justify;}
 
 /* Modal Footer */
 .modal-footer {
