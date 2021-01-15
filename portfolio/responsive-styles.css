@@ -116,6 +116,25 @@ body {
     margin: 100px auto 100px auto;
     justify-items: center;
 }
+.socials img {
+    margin: 5px;
+    width: 55px;
+    transition: all 70ms linear;
+    border:none
+}
+
+.socials img:hover {
+    border:rgb(233, 128, 116) 3px solid;
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .social img{width: 40px;}
+}
+
+@media screen and (max-width: 400px) {
+    .social img{width: 30px;}
+}
+
 .icon {
     transition: color 215ms linear;
     font-size: 43px;
@@ -399,11 +418,19 @@ p1 {
     padding: 20px;
     background-color: #ddd;
 }
-.resume-exp .fas {
-    font-size: 65px;
+
+.resume-exp img {
+    height: 90px;
+    width:auto;
     padding: 7px;
-    color: black;
+    justify-self: center;
 }
+
+
+@media screen and (max-width: 520px) {
+    .resume-exp img {height: 100%;width: auto;}
+}
+
 
 @media screen and (min-width: 500px) and (max-width: 920px) {
     .edu-list {grid-gap: 8px;width:100%;}
@@ -679,4 +706,9 @@ p1 {
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
+}
+
+.box img { 
+    height: 130px;
+    padding:15px;
 }
