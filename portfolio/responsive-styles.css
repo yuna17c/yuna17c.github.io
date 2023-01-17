@@ -300,7 +300,6 @@ body {
   column-gap: 15px;
 }
 .edu-cont {
-  border: red 1px solid;
   display: grid;
   grid-template-columns: 1fr 5fr;
   width: 100%;
@@ -329,10 +328,6 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  /* display: grid;
-  grid-template-rows: 34% 33% 33%;
-  width: 100%;
-  height: auto; */
 }
 .school .ib {
   padding-left: 8px;
