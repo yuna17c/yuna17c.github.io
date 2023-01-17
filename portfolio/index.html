@@ -17,10 +17,10 @@
             <a class="nav-link active" href="#home">HOME</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#resume">ABOUT</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#resume">RESUME</a>
+            <a class="nav-link" href="#resume">EXPERIENCE/SKILLS</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#contact">CONTACT</a>
@@ -30,23 +30,37 @@
 
     <section class="intro" id="home">
         <h1 class="intro-col">HELLO,</h1>
-        <h2 class="intro-col">I'm Yuna Choi.</h2>
-        <p class="intro-col role">| Full Stack Developer | UI Designer | </p>    
-        <h6 class="intro-col btn" id="button"><a href="#about">MORE ABOUT ME</a></h6>
+        <h2 class="intro-col">I'm Yuna Choi.</h2>   
+        <h6 class="intro-col btn" id="button"><a href="#about">LEARN MORE ABOUT ME</a></h6>
     </section>
 
     <section class="socials">
-        <a href="https://www.linkedin.com/in/yuna-choi-699262146/"><i class="fab fa-linkedin icon"></i></a>
-        <a href="https://github.com/yuna17c"><i class="fab fa-github icon"></i></a>
-        <a href="https://www.instagram.com/yuna17c/"><i class="fab fa-instagram icon"></i></a>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/yuna-choi-699262146/">
+                <i class="fab fa-linkedin logo"></i>
+            </a>
+        </div>
+        <div class="social">
+            <a href="https://github.com/yuna17c">
+                <i class="fab fa-github logo"></i>
+            </a>
+        </div>
+        <div class="social">
+            <a href="mailto: yh6choi@uwaterloo.ca">
+                <i class="fas fa-envelope-square logo"></i>
+            </a>
+        </div>
     </section>
 
     <!--about me-->
     <section class="about" id="about">
         <h2>ABOUT ME</h2>
-        <div class="profile">
-            <img src="pict.jpg" alt="Yuna Choi Profile">
-            <p>I am a first year student at Universtiy of Waterloo, studying computer science and financial management. I am interested in web and app development, artificial intelligence and the fintech field. In my free time, I enjoy playing tennis and watching netflix. I also like to crochet as a hobby!</p>    
+        <div class="profile-text">
+            <div><p>I am a third year student at the Universtiy of Waterloo, studying computer science and statistics, with experience in data science and software development. </p></div>
+            <div><p>I worked as a data scientist at Wish where I queried data and used time series to analyze user behaviour and make decisions regarding A/B tests.
+                I also collaborated with the project managers to discuss the analysis and future plans based on data.</p></div>
+            <div><p>As a software developer at Trend Micro, I developed Jenkins Pipeline to verify and update necessary SDKs for Cloud One and developed API endpoints for search functions.</p></div>
+            <div><p>In my free time, I enjoy playing tennis and reading. I also love to ski and rock climb!</p></div>
         </div>
     </section>
 
@@ -57,224 +71,125 @@
             <h2>More of my experience and skills.</h2>
         </div>
 
+        <!--experience-->
+        <section class="resume-exp">
+            <h2>EXPERIENCE</h2>
+            <div class="exp-list">
+                <div  class="exp">
+                    <i class="fas fa-laptop-code logo"></i>
+                    <h1>Software Developer</h1>
+                    <p>Trend Micro • Ottawa</p>
+                    <p>Aug 2022 - Dec 2022</p>
+                </div>
+                <div class="exp">
+                    <i class="fas fa-chalkboard-teacher logo"></i>
+                    <h1>Data Scientist</h1>
+                    <p>Wish • Toronto</p>
+                    <p>Jan 2022 - Apr 2022</p>
+                </div>
+                <div class="exp">
+                    <i class="fas fa-server logo"></i>
+                    <h1>Software Developer in Test</h1>
+                    <p>Curinos • Toronto</p>
+                    <p>May 2021 - Sep 2021</p>
+                </div>
+            </div>
+        </section>
+        <!--projects-->
+        <section class="resume-prj" id="hello">
+            <h2>PROJECTS</h2>
+            <div class="prj-list">
+                <div class="prj">
+                    <div><h1>Job Basket</h1></div>
+                    <div><p>Resume-job matching app using NLP</p></div>
+                    <div class="top"><a href="https://devpost.com/software/job-basket"><p>devpost</p></a></div>
+                </div>
+                <div class="prj">
+                    <div ><h1>reci.py</h1></div>
+                    <div><p>Web app to keep track of fridge items and recommend recipes</p></div>
+                    <div class="top"><a href="https://github.com/yuna17c/reci.py"><p>github</p></a></div>
+                </div>
+                <div class="prj">
+                    <div><h1>Expense tracker</h1></div>
+                    <div><p>Web app for budgeting and keeping track of expenses</p></div>
+                    <div class="top"><a href="https://github.com/yuna17c/personal-finance-helper"><p>github</p></a></div>
+                </div>
+                <div class="prj"> 
+                    <div><h1>Cyber Bugs</h1></div>
+                    <div><p>Single player adventure game</p></div>
+                    <div class="top"><a href="https://github.com/yuna17c/Cyber-Bugs"><p>github</p></a></div>
+                </div>
+            </div>
+        </section>
         <!--skills/edu-->
         <section class="first-row">
             <div class="resume-skills">
                 <h2 id="title">SKILLS</h2>
                 <div class="skill-list">
                     <div class="sub">
-                        <div class="sub-sub">
-                            <p class="name">HTML</p>
-                            <p class="per nin">90%</p> 
-                        </div>
-                        <div class="container">
-                            <div class="skills html">a</div>
-                        </div>
+                        Python
                     </div>
                     <div class="sub">
-                        <div class="sub-sub">
-                            <p class="name">CSS</p>
-                            <p class="per eigfiv">85%</p> 
-                        </div>
-                        <div class="container">
-                            <div class="skills css">a</div>
-                        </div>
+                        SQL
                     </div class="sub">
                     <div class="sub">
-                        <div class="sub-sub">
-                            <p class="name">Python</p>
-                            <p class="per ninfiv">95%</p> 
-                        </div>
-                        <div class="container">
-                            <div class="skills python">a</div>
-                        </div>
+                        C/C++
                     </div>
                     <div class="sub">
-                        <div class="sub-sub">
-                            <p class="name">MS Word</p>
-                            <p class="per eigeig">88%</p> 
-                        </div>
-                        <div class="container">
-                            <div class="skills msw">a</div>
-                        </div>
+                        R
+                    </div>
+                    <div class="sub">
+                        Jupyter Notebook
                     </div>   
                     <div class="sub">
-                        <div class="sub-sub">
-                            <p class="name">MS Excel</p>
-                            <p class="per eigfiv">85%</p> 
-                        </div>
-                        <div class="container">
-                            <div class="skills mse">a</div>
-                        </div>
-                    </div>     
+                        Pandas
+                    </div>  
+                    <div class="sub">
+                        Tableau
+                    </div>  
+                    <div class="sub">
+                        PyTorch
+                    </div>   
+                    <div class="sub">
+                        Jenkins
+                    </div>
+                    <div class="sub">
+                        Apache Superset
+                    </div>
+                    <div class="sub">
+                        Django
+                    </div>
+                    <div class="sub">
+                        Java
+                    </div>
+                    <div class="sub">
+                        JavaScript
+                    </div>
+                    <div class="sub">
+                        React
+                    </div>
                 </div>
             </div>
             <div class="edu">
                 <h2 id="title">EDUCATION</h2>
                 <div class="edu-list">
-                    <div class="edu-cont ib">
-                        <img src="ib.png" alt="IB Program">
+                    <div class="edu-cont uw">
+                        <img src="img/uwaterloo.png" alt="UWaterloo">
                         <div class="school">
-                            <h2>International Baccalaureate</h2>
-                            <p>• IBDP (Class of 2020)</p>
-                            <p>• Total score: 40/45</p>
+                            <div><h2>University of Waterloo (2020-2025)</h2></div>
+                            <div><p>• Bachelor of Computer Science (BCS), Minor in Statistics</p></div>
+                            <div><p>• GPA: 3.7</p> </div>
                         </div>
                     </div>
-                    <div class="edu-cont uw">
-                        <img src="uwaterloo.png" alt="UWaterloo">
+                    <div class="edu-cont ib">
+                        <img src="img/ib.png" alt="IB Program">
                         <div class="school">
-                            <h2>University of Waterloo (class of 2025)</h2>
-                            <p>• Candidate for Bachelor of Computing and Financial Management</p> 
-                            <p>• GPA: 4.0 (97.0%)</p> 
+                            <div><h2>International Baccalaureate</h2></div>
+                            <div><p>• IBDP (2016-2020)</p></div>
+                            <div><p>• Total score: 40/45</p></div>
                         </div>
                     </div>
                 </div>              
-            </div>
-        </section>
-        
-        <!--projects-->
-        <section class="resume-prj" id="hello">
-            <h2>PROJECTS</h2>
-            <p>Click for more details.</p>
-            <div class="prj-list">
-                <div class="prj">       <!--RACKO-->
-                    <div class="top"><h1>Rack-O</h1></div>
-                    <p>Single&multiplayer card game</p>
-                    <div class="links">
-                        <button id="myBtn">Details</button>
-                        <button><a href="https://github.com/yuna17c/Rack-O">GitHub</a></button>
-                    </div> 
-                </div>
-                <div id="myModal" class="modal">    <!--RACKO MODAL-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Rack-O</h2>
-                            <span class="close">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <ul>
-                                <li>An online implementation of the card game Rack-O using Python and the Pygame environment.</li>
-                                <li>Includes a single player and 2 player mode, leaderboard and settings</li>
-                                <li>Incorporated a login system that saves scores, checks for invalid inputs and allows for account removals.</li>
-                            </ul>                            
-                        </div>
-                        <div class="modal-footer">
-                            <img src="2.jpg" alt="Rack-O">
-                            <img src="4.jpg" alt="Rack-O">
-                            <img src="7.jpg" alt="Rack-O">
-                        </div>
-                    </div>
-                </div>
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById("myModal");
-
-                    // Get the button that opens the modal
-                    var btn = document.getElementById("myBtn");
-
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
-
-                    // When the user clicks on the button, open the modal
-                    btn.onclick = function() {
-                        modal.style.display = "block";
-                    }
-
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
-                        modal.style.display = "none";
-                    }
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
-
-                <div class="prj">       <!--CYBER BUGS-->
-                    <div class="top"><h1>Cyber Bugs</h1></div>
-                    <div><p>Single player adventure game</p></div>
-                    <div class="links">
-                        <button id="myBtn2">Details</button>
-                        <button><a href="https://github.com/yuna17c/Cyber-Bugs">GitHub</a></button>
-                    </div>  
-                </div>                   
-                <div id="myModal2" class="modal2">      <!--CYBER BUGS MODAL-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Cyber Bugs</h2>
-                            <span class="close2">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <ul>
-                                <li>Single player adventure game using Python and the Pygame environment.</li>
-                                <li>Includes shop, inventory and multiple stages with different game objectives</li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                            <img src="2-1.jpg" alt="Cyber-Bugs">
-                            <img src="2-2.jpg" alt="Cyber-Bugs">
-                            <img src="2-4.jpg" alt="Cyber-Bugs">
-                        </div>
-                    </div>
-                </div>       
-                <script>
-                    // Get the modal
-                    var modal2 = document.getElementById("myModal2");
-
-                    // Get the button that opens the modal
-                    var btn2 = document.getElementById("myBtn2");
-
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close2")[0];
-
-                    // When the user clicks on the button, open the modal
-                    btn2.onclick = function() {
-                        modal2.style.display = "block";
-                    }
-
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
-                        modal2.style.display = "none";
-                    }
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal2) {
-                            modal2.style.display = "none";
-                        }
-                    }
-                </script>
-
-                <div class="prj">
-                    <div class="top"><h1>Yarncraft</h1></div>
-                    <div><p>Crochet shop website</p></div>
-                </div>
-            </div>
-        </section>
-
-        <!--experience-->
-        <section class="resume-exp">
-            <h2>EXPERIENCE</h2>
-            <div class="exp-list">
-                <a href="https://www.marcandrei.com/"><div class="exp">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h1>Tutor</h1>
-                    <p>A private tutor at Marc Andrei Tutoring • 2 years</p>
-                </div></a>
-                <a href="https://haltonhamilton.bigbrothersbigsisters.ca/">
-                    <div class="exp">
-                        <i class="fas fa-hand-holding-heart"></i>
-                        <h1>Big Brothers Big Sisters</h1>
-                        <p>Homework club • One-on-one mentoring • 4 years</p>
-                    </div></a>
-                <div class="exp">
-                    <i class="fas fa-shopping-basket"></i>
-                    <h1>Sobeys</h1>
-                    <p>Customer service • 3 years</p>
-                </div>
             </div>
         </section>
     </section>
@@ -287,14 +202,19 @@
         </div>
         <div class="contact-box">
             <div class="box">
-              <i class="fas fa-envelope"></i>
-              <p1>email me at</p1>
-              <p>yuna0617c@gmail.com</p>
+                <img src="img/email.png" alt="Email">
+                <p1>email me at</p1>
+                <a href="mailto: yh6choi@uwaterloo.ca"><p>yh6choi@uwaterloo.ca</p></a>
             </div>
             <div class="box">
-              <i class="fas fa-thumbs-up"></i>
-              <p1>find my socials</p1>
-              <p id="socials-link"><a href="#button">links</a></p>
+                <img src="img/doc.png" alt="Resume">
+                <p1>download my resume</p1>
+                <p><a href="https://drive.google.com/file/d/1UeP4h7aHOz7l6wI7ltMp6iXC8X_zcBQX/view">download</a></p>
+            </div>
+            <div class="box">
+                <img src="img/good2.png" alt="Social">
+                <p1>find my socials</p1>
+                <p id="socials-link"><a href="#button">links</a></p>
             </div>
         </div>
     </section>
