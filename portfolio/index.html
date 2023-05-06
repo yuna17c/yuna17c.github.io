@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Montserrat:wght@400;600;700;800&family=Questrial&family=Red+Hat+Display:wght@700;900&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600|Candara|Century+Gothic|News+Cycle:300,400,600|Alegreya" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rokkitt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet"><title>Yuna Choi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&family=Source+Sans+Pro:wght@300;400;600;800&display=swap" rel="stylesheet"><title>Yuna Choi</title>
+    <title>Yuna Choi</title>
 </head>
+
 <body>
     <section>
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center" id="navbar">
         <li class="nav-item">
             <a class="nav-link" href="#about">ABOUT ME</a>
         </li>
@@ -24,11 +26,41 @@
         </li>
         </ul>
     </section>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <div class="socials">
+        <div>
+            <a href="https://www.linkedin.com/in/yuna-choi-699262146/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/yuna17c">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div>
+            <a href="mailto: yh6choi@uwaterloo.ca">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+    </div>
     
     <section class="intro">
         <div><h2>hello,</h2></div>
         <div><h1>I'm Yuna Choi.</h1></div>
-        <div><p>I'm a computer science and statistics student at the University of Waterloo with interests in data science & machine learning. Find my socials below and scroll down to learn more about me :D</p></div>
+        <div><p>I'm a computer science and statistics student at the University of Waterloo with interests in data science & machine learning. Find my socials on the side and scroll down to learn more about me :D</p></div>
     </section>
     
     <section class="about" id="about">
@@ -54,7 +86,7 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section class="experience" id="exp">
         <h2>experience</h2>
         <div class="carousel">
             <div id="scene">
@@ -65,7 +97,7 @@
                     <label for="radio_strawberry" class="label_strawberry">TD</label>
                     <div class="content content_strawberry">
                       <h3>Data Scientist @ TD</h3>
-                      <p>May 2023 - Present</p>
+                      <p class="date">May 2023 - Present</p>
                     </div>
                   </li>
                   <li class="item">
@@ -73,7 +105,14 @@
                     <label for="radio_banana" class="label_banana">Trend Micro</label>
                     <div class="content content_banana">
                       <h3>Software Developer @ Trend Micro</h3>
-                      <p>Sept 2022 - Dec 2022</p>
+                      <p class="date">Sept 2022 - Dec 2022</p>
+                      <div class="desc">
+                        <ul>
+                            <li><span>Developed Jenkins Pipeline to verify SDK versions and update if necessary.</span></li>
+                            <li><span>Created API endpoints for enhanced search functions in Trend Micro products.</span></li>
+                            <li><span>Some technologies I used: Java, Groovy, Python, Jenkins, Postman</span></li>
+                        </ul>
+                      </div>
                     </div>
                   </li>
                   <li class="item">
@@ -81,7 +120,14 @@
                     <label for="radio_apple" class="label_apple">Wish</label>
                     <div class="content content_apple">
                       <h3>Data Scientist @ Wish</h3>
-                      <p>Jan 2022 - Apr 2022</p>
+                      <p class="date">Jan 2022 - Apr 2022</p>
+                      <div class="desc">
+                        <ul>
+                            <li><span>Analyzed user behaviour at checkout stage and utilized it to make decisions regarding A/B tests for shipping prices.</span></li>
+                            <li><span>Worked alongside project managers to discuss the analysis and strategies based on data.</span></li>
+                            <li><span>Some technologies I used: SQL, Tableau, Apache Spark, Query engines like Hive and Presto</span></li>
+                        </ul>
+                      </div>
                     </div>
                   </li>
                   <li class="item">
@@ -89,7 +135,14 @@
                     <label for="radio_orange" class="label_orange">Curinos</label>
                     <div class="content content_orange">
                       <h3>Software Developer in Test @ Curinos</h3>
-                      <p>May 2021 - Aug 2021</p>
+                      <p class="date">May 2021 - Aug 2021</p>
+                      <div class="desc">
+                        <ul>
+                            <li><span>Wrote automated test scripts for Amplero, a marketing optimization tool.</span></li>
+                            <li><span>Translated various manual test cases into automated tests and accelerated the testing process.</span></li>
+                            <li><span>Some technologies I used: Python, Postman, Selenium</span></li>
+                        </ul>
+                      </div>
                     </div>
                   </li>
                     </ul>
@@ -98,38 +151,29 @@
                 <div id="right-zone"></div>
             </div>
         </div>
-
-        <!-- <div class="slider">
-                <div><img src="img/larr.png"></div>
-                <div><a href="#slide-1">TD</a></div>
-                <div><a href="#slide-2">Trend</a></div>
-                <div><a href="#slide-3">Wish</a></div>
-                <div><a href="#slide-4">Curinos</a></div>
-                <div><img src="img/rarr.png"></div>
-            </div>
-            <div class="slides">
-              <div id="slide-1">
-                <h3>Data Scientist @ <span>TD</span></h3>
-                <p>May 2023 - Present</p>
-              </div>
-              <div id="slide-2">
-                <h3>Software Developer @ <span>Trend Micro</span></h3>
-                <p>Aug 2022 - Dec 2022</p>
-              </div>
-              <div id="slide-3">
-                <h3>Data Scientist @ <span>Wish</span></h3>
-                <p>Jan 2022 - Apr 2022</p>
-              </div>
-              <div id="slide-4">
-                <h3>Data Scientist @ <span>TD</span></h3>
-                <p>May 2021 - Sep 2021</p>
-              </div>
-            </div>
-        </div> -->
     </section>
     
+    <section class="projects">
+        <h2>projects</h2>
+        <div class="project-lst">
+            <div class="project">
+                <div><h3>Job Basket</h3></div>
+                <div><p>Resume-job matching app using NLP</p></div>
+                <div class="top"><a href="https://devpost.com/software/job-basket"><p>devpost</p></a></div>
+            </div>
+            <div class="project">
+                <div ><h3>reci.py</h3></div>
+                <div><p>Web app to keep track of fridge items and recommend recipes</p></div>
+                <div class="top"><a href="https://github.com/yuna17c/reci.py"><p>github</p></a></div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <section class="contact" id="contact">
+        <div class="contact-head">
+            <h2>contact</h2>
+            <p>Feel free to reach out to me about anything! I'm always looking for new opportunities :)</p>
+        </div>
+    </section>
 </body>
 </html>
