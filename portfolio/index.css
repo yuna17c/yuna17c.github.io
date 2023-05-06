@@ -1,0 +1,177 @@
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.carousel {
+  margin-top: 15px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.carousel #scene {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 80%;
+  height: 300px;
+  background-color: #291f16;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+.carousel #scene #left-zone {
+  background: #291f16;
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: left;
+}
+.carousel #scene #left-zone .list {
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] {
+  display: none;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ label:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ label.label_banana:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ label.label_apple:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ label.label_orange:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ .content {
+  position: absolute;
+  left: 20%;
+  top: 0;
+  width: 60%;
+  height: 75%;
+  opacity: 0;
+  animation-duration: 0.75s;
+  animation-name: slideout;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry h3 {
+  color: #3e7a3e;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana h3 {
+  color: #992127;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h3 {
+  color: #384ca1;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h3 {
+  color: #e29061;
+}
+.carousel #scene #left-zone .list li.item input[type=radio] ~ .content p {
+  max-width: 50%;
+  text-align: center;
+}
+.carousel #scene #left-zone .list li.item input[type=radio]:checked ~ label {
+  opacity: 1;
+  animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.carousel #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_strawberry {
+  color: #3e7a3e;
+  border-right: solid 4px #3e7a3e;
+}
+.carousel #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_banana {
+  color: #992127;
+  border-right: solid 4px #992127;
+}
+.carousel #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_apple {
+  color: #384ca1;
+  border-right: solid 4px #384ca1;
+}
+.carousel #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
+  color: #e29061;
+  border-right: solid 4px #e29061;
+}
+.carousel #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
+  animation-duration: 0.75s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.carousel #scene #middle-border {
+  background-color: #1A120B;
+  height: 75%;
+  flex-grow: 1;
+  max-width: 2px;
+  z-index: 0;
+}
+.carousel #scene #right-zone {
+  background: #291f16;
+  height: 100%;
+  flex-grow: 3;
+}/*# sourceMappingURL=index.css.map */
