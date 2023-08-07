@@ -164,8 +164,16 @@ a:link {
 
 .project {
   background-color: #291f16;
-  padding: 15px;
+  padding: 20px;
   width: 22.3vw;
   
 }
 
+.plink i {
+  color: #D5CEA3;
+  transition: all 230ms linear;
+}
+
+.plink i:hover {
+  color: #C69749;
+}
