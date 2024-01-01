@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="responsive-styles.css">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Montserrat:wght@400;600;700;800&family=Questrial&family=Red+Hat+Display:wght@700;900&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600|Candara|Century+Gothic|News+Cycle:300,400,600|Alegreya" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rokkitt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&family=Source+Sans+Pro:wght@300;400;600;800&display=swap" rel="stylesheet"><title>Yuna Choi</title>
@@ -13,16 +15,19 @@
 </head>
 
 <body>
-    <section>
+    <section class="links">
         <ul class="nav justify-content-center" id="navbar">
-        <li class="nav-item">
-            <a class="nav-link" href="#about">ABOUT ME</a>
+        <li class="nav-item ">
+            <a class="nav-link active" href="index.html">ABOUT ME</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#exp">EXPERIENCE</a>
+        <li class="nav-item inactive">
+            <a class="nav-link" href="experience.html">EXPERIENCE</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
+        <li class="nav-item inactive">
+            <a class="nav-link", href="projects.html">PROJECTS</a>
+        </li>
+        <li class="nav-item inactive">
+            <a class="nav-link" href="contact.html">CONTACT</a>
         </li>
         </ul>
     </section>
@@ -60,7 +65,7 @@
     <section class="intro">
         <div><h2>hello,</h2></div>
         <div><h1>I'm Yuna Choi.</h1></div>
-        <div><p>I'm a computer science and statistics student at the University of Waterloo with interests in data science, software development & machine learning. Find my socials on the side and scroll down to learn more about me :D</p></div>
+        <div><p>I'm a computer science and statistics student at the University of Waterloo with interests in data science, software development & machine learning. Find my socials on the side and scroll down to learn more about me!</p></div>
     </section>
     
     <section class="about" id="about">
@@ -71,119 +76,23 @@
                     <p>Hi! I'm Yuna and currently a third year student at the Universtiy of Waterloo.</p>
                 </div>
                 <div>
-                    <p>While I have experience in both data science and software development, my main focus these days is data science and machine learning, espescially NLP and classification problems.</p>
+                    <p>While I have experience in both data science and software development, my main focus these days is data science and machine learning.
+                        Leveraging my background in statistics, I'm exploring predictive modeling, neural networks, natural language processing, and algorithm development. 
+                        I'm particularly interested in ethical AI - removing bias from machine learning, and practical applications of AI. 
+                    </p>
                 </div>
                 <div>
                     <p>Here are a few technologies I'm familiar with:</p>
                     <ul>
-                        <li><span>Python + Python libraries/tools (Pandas, PySpark, Scikit-learn, NLTK)</span></li>
+                        <li><span>Python + Python libraries/tools (Pandas, PyTorch, Scikit-learn, NLTK, PySpark)</span></li>
                         <li><span>Data analysis/visualization tools (SQL, R, Tableau)</span></li>
                         <li><span>Programming languages (C/C++, Java)</span></li>
                         <li><span>Azure Cloud tools (Databricks, Data Factory, etc.)</span></li>
-                        <li><span>Data analysis/visualization tools (SQL, R, Tableau)</span></li>
                         <li><span>Linux and Git</span></li>
                     </ul>
                 </div>
             </div>
             <div><img src="img/pfp.jpg" alt="picture"></div>
-        </div>
-    </section>
-
-    <section class="experience" id="exp">
-        <h2>experience</h2>
-        <div class="carousel">
-            <div id="scene">
-                <div id="left-zone">
-                    <ul class="list">
-                  <li class="item">
-                    <input type="radio" id="radio_strawberry" name="basic_carousel" value="strawberry" checked>
-                    <label for="radio_strawberry" class="label_strawberry">TD</label>
-                    <div class="content content_strawberry">
-                      <h3>Data Scientist @ TD</h3>
-                      <p class="date">May 2023 - Present</p>
-                      <div class="desc">
-                        <ul>
-                            <li><span>Developed a customer segmentation model and provided insights into expansions of the customer base based on wealth levels and targeted marketing strategies. </span></li>
-                            <li><span>Refactored code to optimize the queries, resulting in a reduction of resource usage by over 35% and an improvement of overall system performance. </span></li>
-                            <li><span>Built an NLP model to extract personal information from obituaries to match with the customers’ wills. </span></li>
-                            <li><span>Tech I used: Python, SQL, PySpark, Tableau</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <input type="radio" id="radio_banana" name="basic_carousel" value="banana">
-                    <label for="radio_banana" class="label_banana">Trend Micro</label>
-                    <div class="content content_banana">
-                      <h3>Software Developer @ Trend Micro</h3>
-                      <p class="date">Sept 2022 - Dec 2022</p>
-                      <div class="desc">
-                        <ul>
-                            <li><span>Developed Jenkins Pipeline to verify SDK versions and update if necessary.</span></li>
-                            <li><span>Developed enhanced search functions in Trend Micro products that allow for flexible non-exact matching searches such as typing mistakes and different order of words.</span></li>
-                            <li><span>Wrote a Python script to automatically generate documentations upon new API development.</span></li>
-                            <li><span>Tech I used: Java, Groovy, Python, Jenkins, Postman</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <input type="radio" id="radio_apple" name="basic_carousel" value="apple">
-                    <label for="radio_apple" class="label_apple">Wish</label>
-                    <div class="content content_apple">
-                      <h3>Data Scientist @ Wish</h3>
-                      <p class="date">Jan 2022 - Apr 2022</p>
-                      <div class="desc">
-                        <ul>
-                            <li><span>Developed a predictive model that forecasts purchase pattern of loyal customers to evaluate the viability of a subscription service.</span></li>
-                            <li><span>Implemented a pricing experiment for a subscription service and analyzed A/B test results, leveraging data driven insights to increase conversion rates.</span></li>
-                            <li><span>Identified causes of a high shopping cart abandonment rate through user segmentation and behaviour analysis and proposed a solution to increase the revenue by 22%.</span></li>
-                            <li><span>Tech I used: Python, SQL, Tableau, Apache Spark</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <input type="radio" id="radio_orange" name="basic_carousel" value="orange">
-                    <label for="radio_orange" class="label_orange">Curinos</label>
-                    <div class="content content_orange">
-                      <h3>Software Developer in Test @ Curinos</h3>
-                      <p class="date">May 2021 - Aug 2021</p>
-                      <div class="desc">
-                        <ul>
-                            <li><span>Wrote automated test scripts for Amplero, a marketing optimization tool.</span></li>
-                            <li><span>Translated various manual test cases into automated tests and accelerated the testing process.</span></li>
-                            <li><span>Tech I used: Python, Postman, Selenium</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                    </ul>
-                </div>
-                <div id="middle-border"></div>
-                <div id="right-zone"></div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="projects">
-        <h2>projects</h2>
-        <div class="project-lst">
-            <div class="project">
-                <div><h3>Job Basket</h3></div>
-                <div><p>Resume to job matching app using NLP</p></div>
-                <div class="plink">
-                    <a href="https://devpost.com/software/job-basket">
-                        <i class="fas fa-link"></i>
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="project">
-                <div ><h3>reci.py</h3></div>
-                <div><p>Web app to keep track of fridge items and recommend recipes</p></div>
-                <div class="plink"><a href="https://github.com/yuna17c/reci.py"><i class="fas fa-link"></i></a></div>
-            </div>
         </div>
     </section>
 

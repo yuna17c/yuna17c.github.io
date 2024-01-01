@@ -27,7 +27,8 @@ h2 {
   font-weight: 600;
 }
 h3 {
-  font-size: 1.4vw;
+  font-size: 1.7vw;
+  color: #C69749;
   font-weight: 800;
 }
 p {
@@ -52,7 +53,11 @@ p {
   padding: 0px 13px;
   text-align: center;
 }
-.nav-item:hover:after {
+.active {
+  border-bottom: #C69749 2px solid;
+  background: none repeat scroll 0 0 transparent;
+}
+.nav-item.inactive:hover:after {
   width: 68%;
   left: 16%;
 }
@@ -68,11 +73,16 @@ p {
   transition: width 0.4s ease 0s, left 0.4s ease 0s;
   width: 0;
 }
+
 a:active,
 a:visited,
 a:link {
   color: #D5CEA3;
   text-decoration: none;
+}
+
+.links {
+  margin-bottom: 150px;
 }
 
 .intro, .about, .experience, .contact, .projects {
@@ -83,7 +93,7 @@ a:link {
   margin-bottom: 80px;
 }
 .intro h2 {
-  padding-top: 180px;
+  padding-top: 50px;
 }
 .intro p {
   width: 80%;
@@ -113,7 +123,7 @@ a:link {
   font-size: 1.2vw;
   font-weight: 400;
 }
-.about li {
+.about li span {
   font-size: 1vw;
 }
 .about img {
@@ -129,8 +139,15 @@ a:link {
   width: 85%;
   margin: 0 auto;
 }
-.carousel li {
-  font-size: 1.1vw;
+.desc span {
+  font-size: 1.1vw; /* Change this value to your desired font size */
+}
+.experience a {
+  text-decoration: underline;
+}
+.experience a:hover {
+  color: #C69749;
+  transition: 0.4s all ease
 }
 
 .socials {
@@ -153,21 +170,7 @@ a:link {
   margin-top: 50px;
 }
 
-.project-lst {
-  display: flex;
-  /* column-gap: 20px; */
-  margin-top: 15px;
-  width: 46vw;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
-.project {
-  background-color: #291f16;
-  padding: 20px;
-  width: 22.3vw;
-  
-}
 
 .plink i {
   color: #D5CEA3;
@@ -176,4 +179,88 @@ a:link {
 
 .plink i:hover {
   color: #C69749;
+}
+
+.project {
+  padding: 50px;
+  margin: 10px;
+  background-color: #291f16;
+  border-radius: 5px;
+  text-align: center;
+}
+.projects-carousel i {
+  font-size: 2vw;
+}
+
+.project h3 {
+  margin-top: 10px;
+}
+
+.project p {
+  margin-top: 5px;
+  color: #666;
+}
+
+.actions a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 13px;
+  background-color: #1A120B;
+  border-radius: 5px;
+}
+.actions a:hover, .contacts a:hover {
+  color:#C69749;
+  transition: all 400ms ease
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  gap: 25px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-around;
+}
+.contact-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #291f16;
+  gap: 10px;
+}
+.contact-box i {
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+.contacts a {
+  font-size: 0.8vw;
+}
+.btn,
+.email-btn,
+.linkedin-btn {
+  display: inline-block;
+  padding: 5px 12px;
+  margin-right: 6px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1A120B
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

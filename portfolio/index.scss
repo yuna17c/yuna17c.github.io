@@ -48,8 +48,7 @@ $colors: (
   #scene {
     display: flex;
     align-items: center;
-    justify-content: left;
-    width: 80%;
+    justify-content: center;
     height: 450px;
     background-color: #291f16;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12),
@@ -95,7 +94,7 @@ $colors: (
               }
               
               @each $item in $sections{
-                &.label_#{$item} {
+                &.label_#{""+$item} {
  
                   &:before {
                     content: " ";
@@ -114,9 +113,9 @@ $colors: (
               
             & ~ .content {
               position: absolute;
-              left: 20%;
+              left: 25%;
               top: 0;
-              width: 60%;
+              width: 75%;
               opacity:0;
               margin-top: 30px;
               animation-duration: 0.75s;
@@ -127,10 +126,11 @@ $colors: (
               justify-content: center;
               flex-direction: column;
               @each $item in $sections{
-                &.content_#{$item} {
+                &.content_#{""+$item} {
                   
                   h3{
                     color: get-color($item);
+                    font-size: 1.6vw;
                   }
                 }
               }
@@ -146,7 +146,7 @@ $colors: (
                 animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
                 
                 @each $item in $sections{
-                  &.label_#{$item} {
+                  &.label_#{""+$item} {
                     color: get-color($item);
                     border-right: solid 4px get-color($item);
                   }
