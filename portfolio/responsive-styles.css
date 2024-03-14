@@ -1,16 +1,357 @@
+:root {
+  --txt: #121212;
+  --txt-light: #1d1d1d;
+  --bg: #FFFFFF;
+  --primary-accent: #9d2af0; 
+  --secondary-accent: #621c91;
+  --tertiary-accent-color: #FF9800; 
+  --highlight: #FFD700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mackina Med', sans-serif;
+  background-color: var(--bg);
+}
+
+header {
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 65px;
+  margin-top: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: var(--txt);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.45s ease;
+  font-size: 1.2vw;
+}
+
+nav ul li a:hover {
+  color: var(--primary-accent);
+}
+
+nav ul li a.active {
+  color: var(--primary-accent);
+}
+
+h1 {
+  font-size: 3vw;
+  margin-bottom: 2vw;
+}
+
+p {
+  font-family: 'Mackina';
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+}
+
+.hero {
+  padding-top: 10px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hello {
+  font-family: 'Mackina Med Ita', sans-serif; 
+  margin-right: 10px;
+  margin-left: 8px;
+}
+
+.period {
+  color: var(--primary-accent);
+  margin-left:4px;
+  font-size: 3.6vw;
+}
+
+.hero a {
+  font-family: 'Barlow';
+  font-weight: 500;
+}
+
+.hero-content {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.subtitle {
+  margin-top: 0;
+  line-height: 1.7;
+}
+
+.smaller {
+  font-size: 1.2vw;
+}
+
+.light {
+  color: var(--txt-light)
+}
+
+.scroll-button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  color: var(--primary-accent);
+  border: 2px solid var(--primary-accent);
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 50px;
+  transition: border-color 0.3s ease;
+  transition: color 0.3s ease;
+  width: fit-content;
+  align-self: center;
+}
+
+.scroll-button:hover {
+  border-color: var(--secondary-accent);
+  color:var(--secondary-accent);
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.item:hover {
+  transform: translateY(-8px); /* Move the section 5px upwards on hover */
+}
+
+.works p {
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.content h2 {
+  margin-bottom: 7px;
+  font-size: 1.3vw;
+}
+
+.item {
+  width: calc(50% - 50px);
+  margin: 25px;
+  transition: transform 0.3s ease;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 0 10px;
+}
+
+.tags {
+  margin-top: 0px;
+}
+
+.tags span {
+  background-color: var(--primary-accent);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  width: 65%;
+  margin: 90px auto 40px auto;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.get-in-touch {
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin: 0 25px;
+}
+
+.contact-icons {
+  display: flex;
+  margin: 0 25px;
+}
+
+.contact-icons a {
+  margin-left: 10px;
+}
+
+.contact-icons i {
+  color: var(--txt);
+  font-size: 2.3vw;
+  padding: 10px;
+}
+
+/* about */
+.container {
+  display: flex;
+  gap: 25px;
+  margin: 0 25px;
+}
+
+.big-container {
+  width: 65%;
+  margin: 60px auto;
+}
+
+.picture {
+  padding-top: 20px;
+  flex: 0 0 35%;;
+  display: flex;
+  align-items:flex-start;
+}
+
+.picture img {
+  max-width: 100%;
+}
+
+.info {
+  flex: 1;
+  padding: 20px;
+}
+.info p, .info ul {
+  margin: 0;
+}
+.txt, .info ul {
+  font-family: 'Noto Sans', serif;
+} 
+
+.title {
+  font-family: 'Mackina Med';
+  margin: 0;
+}
+
+.experiences {
+  margin: 70px 25px;
+  text-align: left;
+}
+.last {
+  margin: 0 25px;
+}
+/* experiences */
+.table-container {
+  overflow-x: auto;
+  font-family: 'Noto Sans';
+  font-size:1.1vw;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top:10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-child {
+  border-bottom: none; 
+}
+
+th:nth-child(3), td:nth-child(3) {
+  text-align: right;
+}
+
+/* hobbies */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equally spaced columns */
+  gap: 10px; 
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column img {
+  width: 100%; 
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 100%;
+  transition: filter 0.35s ease; 
+}
+.image-container {
+  position: relative;
+}
+.image-container:hover img {
+  filter: brightness(70%); 
+}
+
+.caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2vw;
+  color: white;
+  font-family:'Noto Sans';
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  width: auto;
+  padding: 0;
+}
+
+.image-container:hover .caption {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* 
-colors:
-backgroud: 1A120B
-text: D5CEA3
-accent: C69749
-*/
 html { 
   scroll-behavior: smooth;
 }
 body { 
-  background-color: #1A120B;
+  background-color: var(--bg-color);
   font-family: 'Nunito Sans', sans-serif;
-  color: #D5CEA3;
+  color: var(--text-color);
 }
 @viewport {
   width: device-width;
@@ -39,7 +380,7 @@ p {
 .nav {
   width: 100%;
   position: fixed;
-  background-color:#1A120B;
+  background-color:var(--bg-color);
   padding-top: 15px;
   top: 0;
   z-index: 1;
@@ -100,7 +441,7 @@ a:link {
 }
 
 /* #about */
-.about {
+/* .about {
   justify-content: center;
 }
 .about-cont {
@@ -129,10 +470,10 @@ a:link {
 .about img {
   width: 22vw;
   padding: 0 10px;
-}
+} */
 
 /*  #experience */
-.carousel .date {
+/* .carousel .date {
   font-size: 1vw;
 }
 .carousel .desc {
@@ -141,7 +482,7 @@ a:link {
 }
 .desc span {
   font-size: 1.1vw; /* Change this value to your desired font size */
-}
+/* }
 .experience a {
   text-decoration: underline;
 }
@@ -238,8 +579,8 @@ a:link {
   padding: 30px;
   background-color: #291f16;
   gap: 10px;
-}
-.contact-box i {
+} */
+/* .contact-box i {
   font-size: 4vw;
   margin-bottom: 20px;
 }
@@ -287,4 +628,4 @@ a:link {
   max-width: 100%;
   height: auto;
   display: block;
-}
+} */
