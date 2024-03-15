@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Mackina Med', sans-serif;
+  font-family: 'Mackina Med', serif;
   background-color: var(--bg);
 }
 
@@ -27,7 +27,7 @@ header {
 }
 
 .logo img {
-  width: 65px;
+  width: 5vw;
   margin-top: 5px;
 }
 
@@ -64,9 +64,19 @@ h1 {
 }
 
 p {
-  font-family: 'Mackina';
+  font-family: 'Noto Sans';
   font-size: 1.5vw;
-  margin-bottom: 2vw;
+}
+
+h2 {
+  margin-bottom: 7px;
+  font-size: 1.3vw;
+}
+
+footer {
+  text-align: center;
+  width: 65%;
+  margin: 90px auto 40px auto;
 }
 
 .hero {
@@ -79,19 +89,14 @@ p {
 
 .hello {
   font-family: 'Mackina Med Ita', sans-serif; 
-  margin-right: 10px;
-  margin-left: 8px;
+  margin-right: 12px;
+  margin-left: 6px;
 }
 
 .period {
   color: var(--primary-accent);
-  margin-left:4px;
+  margin-left: 4px;
   font-size: 3.6vw;
-}
-
-.hero a {
-  font-family: 'Barlow';
-  font-weight: 500;
 }
 
 .hero-content {
@@ -113,22 +118,26 @@ p {
   color: var(--txt-light)
 }
 
-.scroll-button {
-  display: inline-block;
-  text-align: center;
-  padding: 10px 20px;
+.button {
+  font-family: 'Noto Sans';
+  font-weight: 500;
   color: var(--primary-accent);
   border: 2px solid var(--primary-accent);
   border-radius: 30px;
   text-decoration: none;
-  margin-top: 50px;
   transition: border-color 0.3s ease;
   transition: color 0.3s ease;
   width: fit-content;
   align-self: center;
+  padding: 10px 20px;
+  text-align: center;
+}
+.scroll {
+  display: inline-block;
+  margin-top: 50px;
 }
 
-.scroll-button:hover {
+.button:hover {
   border-color: var(--secondary-accent);
   color:var(--secondary-accent);
 }
@@ -138,55 +147,45 @@ p {
   flex-wrap: wrap;
   width: 65%;
   margin: 0 auto;
-}
-
-.item:hover {
-  transform: translateY(-8px); /* Move the section 5px upwards on hover */
+  justify-content: center;
+  gap: 40px;
 }
 
 .works p {
-  font-family: 'Noto Sans';
-  font-weight: 500;
   margin-top: 0;
-}
-
-.content h2 {
-  margin-bottom: 7px;
-  font-size: 1.3vw;
 }
 
 .item {
   width: calc(50% - 50px);
-  margin: 25px;
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+  border-color: #cccccccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .item img {
   width: 100%;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .content {
-  padding: 0 10px;
+  padding: 0 17px;
 }
 
 .tags {
-  margin-top: 0px;
+  display: flex;
+  gap: 15px;
 }
 
-.tags span {
-  background-color: var(--primary-accent);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-right: 5px;
-  display: inline-block;
-}
-
-footer {
-  text-align: center;
-  width: 65%;
-  margin: 90px auto 40px auto;
+.tag-box {
+  padding: 6px 15px;
 }
 
 .contact-section {
@@ -243,9 +242,11 @@ footer {
   flex: 1;
   padding: 20px;
 }
+
 .info p, .info ul {
   margin: 0;
 }
+
 .txt, .info ul {
   font-family: 'Noto Sans', serif;
 } 
@@ -262,6 +263,7 @@ footer {
 .last {
   margin: 0 25px;
 }
+
 /* experiences */
 .table-container {
   overflow-x: auto;

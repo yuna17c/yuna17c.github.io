@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="responsive-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
     @font-face {
       font-family: 'Mackina Med';
-      src: url('C:/Users/Yuna/OneDrive/Documents/yuna17c.github.io/portfolio/fonts/MackinacPro-Medium_26.otf') format('opentype');
+      src: url('fonts/MackinacPro-Medium_26.otf') format('opentype');
     }
     @font-face {
         font-family: 'Mackina Med Ita';
-        src: url('C:/Users/Yuna/OneDrive/Documents/yuna17c.github.io/portfolio/fonts/MackinacPro-MedItalic_18.otf') format('opentype');
+        src: url('fonts/MackinacPro-MedItalic_18.otf') format('opentype');
     }
     @font-face {
         font-family: 'Mackina';
-        src: url('C:/Users/Yuna/OneDrive/Documents/yuna17c.github.io/portfolio/fonts/P22MackinacPro-Book_25.otf') format('opentype');
+        src: url('fonts/P22MackinacPro-Book_25.otf') format('opentype');
     }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/logo2.png" alt="0_0"></a>
+            <a href="/"><img src="img/logo2.png" alt="0_0"></a>
         </div>
         <nav>
             <ul>
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
             </ul>
@@ -44,7 +44,7 @@
         <p class="subtitle smaller light">Incoming ML Dev @ AltaML | Prev @ Omnium, TD, Wish, Trend Micro 
         <br> Computer Science, Stats, Computational Math @ UWaterloo</p>
         </div>
-        <a href="#works" class="scroll-button smaller">Explore My Work <span><i class="fas fa-chevron-down"></i></span></a>
+        <a href="#works" class="scroll button smaller">Explore My Work <span><i class="fas fa-chevron-down"></i></span></a>
     </section>
     <section>
         <div class="works" id="works">
@@ -53,6 +53,10 @@
               <div class="content">
                 <h2>Retrieval-Augmented Generation (RAG) Search Engine</h2>
                 <p class="smaller">Python &#183; Cohere Web Connectors</p>
+                <div class="tags">
+                    <a href="https://devpost.com/software/co-there" target="_blank" class="tag-box button">Devpost 🡕</a>
+                    <a href="https://github.com/yuna17c/RAG-Challenge" target="_blank" class="tag-box button">Github 🡕</a>
+                </div>
               </div>
             </div>
             <div class="item">
@@ -60,6 +64,10 @@
                 <div class="content">
                   <h2>Job Basket: Resume-to-job matching app using NLP</h2>
                   <p class="smaller">Python &#183; Semantic search</p>
+                  <div class="tags">
+                    <a href="https://devpost.com/software/job-basket" target="_blank" class="tag-box button">Devpost 🡕</a>
+                    <a href="https://github.com/yuna17c/job-basket" target="_blank" class="tag-box button">Github 🡕</a>
+                  </div>
                 </div>
               </div>
               <div class="item">
@@ -68,8 +76,7 @@
                   <h2>Machine Learning Algorithm Implementations</h2>
                   <p class="smaller">Pytorch &#183; Jupyter Notebook</p>
                   <div class="tags">
-                    <span>Tag1</span>
-                    <span>Tag2</span>
+                    <a href="https://github.com/yuna17c/ml_algorithms" target="_blank" class="tag-box button">Github 🡕</a>
                   </div>
                 </div>
               </div>
@@ -78,6 +85,9 @@
                 <div class="content">
                   <h2>Reci.py: recipe recommendations based on user's fridge</h2>
                   <p class="smaller">Python  &#183; React</p>
+                  <div class="tags">
+                    <a href=href="https://github.com/yuna17c/reci.py" target="_blank" class="tag-box button">Github 🡕</a>
+                </div>
                 </div>
               </div>
           </div>
