@@ -159,8 +159,8 @@ footer {
   width: calc(50% - 50px);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   border-radius: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding-bottom: 30px;
 }
 
 .item:hover {
@@ -176,7 +176,7 @@ footer {
 }
 
 .content {
-  padding: 0 17px;
+  padding: 0 21px;
 }
 
 .tags {
