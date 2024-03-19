@@ -81,7 +81,7 @@ footer {
 
 .hero {
   padding-top: 10px;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -186,6 +186,7 @@ footer {
 
 .tag-box {
   padding: 6px 15px;
+  font-size: 1.2vw;
 }
 
 .contact-section {
