@@ -272,26 +272,26 @@ footer {
   font-size:1.1vw;
 }
 
-table {
+.experiences table {
   width: 100%;
   border-collapse: collapse;
   margin-top:10px;
 }
 
-th, td {
+.experiences th, .experiences td {
   padding: 8px;
   text-align: left;
 }
 
-tr {
+.experiences tr {
   border-bottom: 1px solid #ddd;
 }
 
-tr:last-child {
+.experiences tr:last-child {
   border-bottom: none; 
 }
 
-th:nth-child(3), td:nth-child(3) {
+.experiences th:nth-child(3), .experiences td:nth-child(3) {
   text-align: right;
 }
 
@@ -347,6 +347,33 @@ th:nth-child(3), td:nth-child(3) {
   opacity: 1;
 }
 
+.resume-container {
+  width: 600pt;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.resume {
+  border: black 2px solid;
+  margin-top: 50px;
+  padding: 25px;
+}
+
+.resume h1 {
+  margin: 0;
+  padding-top: 11pt;
+  padding-left: 8pt;
+  text-indent: 0pt;
+  text-align: left;
+}
+.selected {
+  background-color: #dfdfdf; /* Darker color */
+}
+#toggleButton {
+  cursor: pointer;
+  margin-right: 20px;
+}
 /* 
 html { 
   scroll-behavior: smooth;
