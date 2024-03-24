@@ -25,19 +25,19 @@
         }
         </style>
         <style type="text/css"> * {margin:0; padding:0; text-indent:0; }
-         .s1 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 28pt; }
-         .s3 { color: #0462C1; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
-         .s4 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
-         .s5 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
-         h1 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12.5pt; }
-         .h2 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11.5pt; }
-         .s6 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10.5pt; }
-         .s7 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
-         h3 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10.5pt; }
-         .p, p { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; margin:0pt; }
-         .s8 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
-         .s9 { color: black; font-family:Cambria, serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 10pt; }
-         .s10 { color: #0462C1; font-family:Cambria, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10.5pt; }
+         .s1 { font-weight: normal; font-size: 28pt; }
+         .s3 { font-weight: normal; font-size: 10pt; }
+         .s4 { font-weight: normal; font-size: 10pt; }
+         .s5 { font-weight: normal; font-size: 10pt; }
+         h1 { font-style: normal; font-weight: bold; font-size: 12.5pt; }
+         .h2 { font-style: normal; font-weight: bold; font-size: 11.5pt; }
+         .s6 { font-weight: bold; font-size: 10.5pt; }
+         .s7 { font-weight: normal; font-size: 10.5pt; }
+         h3 { font-style: normal; font-weight: bold; font-size: 10.5pt; }
+         .p, p { font-weight: normal; font-size: 10.5pt; margin:0pt; }
+         .s8 { font-weight: normal; font-size: 10pt; }
+         .s9 { font-style: italic; font-weight: normal; font-size: 10pt; }
+         .s10 { font-weight: bold; font-size: 10.5pt; }
          li {display: block; }
          #l1 {padding-left: 0pt; }
          #l1> li>*:first-child:before {content: " "; color: black; font-family:Symbol, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
@@ -73,22 +73,36 @@
             </nav>
         </header>
         <div class="resume-container">
-            <div class="button-container">
-                <a onclick="toggle()" class="button selected" id="toggleButton">Quick View</button>
-                <a href="https://drive.google.com/file/d/1_gNt3ugJ8droERJhbkr2wiqsD8WJzLqz/view?usp=sharing" target="_blank" download="Yuna's Resume" class="button">Download</a>
+        <div class="buttons">
+            <div onclick="toggle()"  class="resume-button selected" id="toggleButton">
+                <a class="button">Quick View</a>
+                <i class="fas fa-eye"></i>
             </div>
+            <div class="resume-button">
+                <a href="https://drive.google.com/file/d/1_gNt3ugJ8droERJhbkr2wiqsD8WJzLqz/view?usp=sharing" target="_blank" download="Yuna's Resume" class="button">Download</a>
+                <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
             <div id="mainFrameOne" class="resume">
                 <table style="border-collapse:collapse;margin-left:5.9pt" cellspacing="0">
                     <tr style="height:39pt">
                         <td style="width:279pt">
-                        <p class="s1" style="padding-left: 2pt;text-indent: 0pt;text-align: left;">Yuna Choi</p>
+                            <p class="s1" style="padding-left: 2pt;text-indent: 0pt;text-align: left;">Yuna Choi</p>
                         </td>
                         <td style="width:267pt">
-                        <p class="s3" style="padding-left: 166pt;padding-right: 2pt;text-indent: -22pt;line-height: 114%;text-align: right;"><span style=" color: #0462C1; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 10pt;">LinkedIn</span> <a href="https://github.com/yuna17c" class="s5" target="_blank">| </a><span style=" color: #0462C1; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 10pt;">GitHub</span> <a href="https://yuna17c.github.io/portfolio/" class="s5" target="_blank">| </a><span style=" color: #0462C1; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 10pt;">Portfolio</span><a href="mailto:yh6choi@uwaterloo.ca" style=" color: #0462C1; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt;" target="_blank"> </a><a href="mailto:yh6choi@uwaterloo.ca" class="s5" target="_blank">yh6choi@uwaterloo.ca</a></p>
-                        <p class="s4" style="padding-right: 2pt;text-indent: 0pt;line-height: 11pt;text-align: right;">+1 647 389 7297</p>
+                            <p class="s3" style="padding-left: 166pt;padding-right: 2pt;text-indent: -22pt;line-height: 114%;text-align: right;">
+                                <span style="font-weight: normal; text-decoration: underline; font-size: 10pt;">LinkedIn</span> 
+                                <a href="https://github.com/yuna17c" class="s5" target="_blank">| </a>
+                                <span style="font-weight: normal; text-decoration: underline; font-size: 10pt;">GitHub</span> 
+                                <a href="https://yuna17c.github.io/portfolio/" class="s5" target="_blank">| </a>
+                                <span style=" font-weight: normal; text-decoration: underline; font-size: 10pt;">Portfolio</span>
+                                <a style="font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt;" target="_blank"> </a>
+                                <a href="mailto:yh6choi@uwaterloo.ca" class="s5" target="_blank">yh6choi@uwaterloo.ca</a>
+                            </p>
+                            <p class="s4" style="padding-right: 2pt;text-indent: 0pt;line-height: 11pt;text-align: right;">+1 647 389 7297</p>
                         </td>
                     </tr>
-                    </table>
+                </table>
                     <h1>E<span class="h2">DUCATION</span></h1>
                     <table style="border-collapse:collapse;margin-left:6.96pt" cellspacing="0">
                         <tr style="height:21pt">
@@ -106,7 +120,7 @@
                     <h1>E<span class="h2">XPERIENCES</span></h1>
                     <p style="padding-left: 6pt;text-indent: 0pt;line-height: 1pt;text-align: left;"/>
                     <h3 style="padding-top: 8pt;padding-left: 8pt;text-indent: 0pt;text-align: left;">Data Scientist                                                   <span class="s8">Jan 2024 – Apr 2024</span></h3>
-                    <p class="s9" style="padding-top: 1pt;padding-left: 8pt;text-indent: 0pt;text-align: left;">Omnium CPG                                                        San Francisco, CA</p>
+                    <p class="italic">Omnium CPG                                                        San Francisco, CA</p>
                     <ul id="l1">
                         <li data-list-text="">
                             <p style="padding-top: 1pt;padding-left: 44pt;text-indent: -18pt;line-height: 112%;text-align: left;">Conducted <b>competitor analysis </b>to support a client in expansion of their product line, providing insights into market trends and desirable product attributes.</p>
@@ -117,7 +131,7 @@
                         <li data-list-text="">
                             <p style="padding-left: 44pt;text-indent: -17pt;text-align: left;">Conducted research into factors influencing product discontinuation probability and methods for predictions.</p>
                             <h3 style="padding-top: 7pt;padding-left: 8pt;text-indent: 0pt;text-align: left;">Data Scientist                                                  <span class="s8">Apr 2023 – Sep 2023</span></h3>
-                            <p class="s9" style="padding-top: 1pt;padding-left: 8pt;text-indent: 0pt;text-align: left;">TD Bank – Wealth Data and Analytics                                             Toronto, ON</p>
+                            <p class="italic">TD Bank – Wealth Data and Analytics                                             Toronto, ON</p>
                         </li>
                         <li data-list-text="">
                             <p style="padding-top: 1pt;padding-left: 44pt;text-indent: -17pt;text-align: left;">Built and deployed an <b>NLP model </b>to extract customer information from plaintext, reducing manual labor by <b>100%</b></p>
@@ -126,7 +140,7 @@
                             <h3 style="padding-top: 1pt;padding-left: 44pt;text-indent: -17pt;text-align: left;">Refactored PySpark and SQL codes <span class="p">to optimize queries, resulting in a reduction of resource usage by over </span>35%</h3>
                             <p style="padding-top: 1pt;padding-left: 44pt;text-indent: 0pt;text-align: left;">and an <b>80% </b>acceleration in system performance.</p>
                             <h3 style="padding-top: 7pt;padding-left: 8pt;text-indent: 0pt;text-align: left;">Software Developer                                               <span class="s8">Sep 2022 – Dec 2022</span></h3>
-                            <p class="s9" style="padding-top: 1pt;padding-left: 8pt;text-indent: 0pt;text-align: left;">Trend Micro – Cloud One Workload Security Team                                      Ottawa, ON</p>
+                            <p class="italic">Trend Micro – Cloud One Workload Security Team                                      Ottawa, ON</p>
                         </li>
                         <li data-list-text="">
                             <p style="padding-top: 1pt;padding-left: 44pt;text-indent: -17pt;text-align: left;">Developed enhanced search functions for Cloud One products to enable flexible matching in <b>Java.</b></p>
@@ -134,7 +148,7 @@
                         <li data-list-text="">
                             <p style="padding-top: 1pt;padding-left: 44pt;text-indent: -17pt;text-align: left;">Automated the process to update out-dated SDK versions using <b>Java Groovy </b>and <b>Python</b>.</p>
                             <h3 style="padding-top: 7pt;padding-left: 8pt;text-indent: 0pt;text-align: left;">Data Scientist                                                   <span class="s8">Jan 2022 – Apr 2022</span></h3>
-                            <p class="s9" style="padding-top: 1pt;padding-left: 8pt;text-indent: 0pt;text-align: left;">Wish (ContextLogic Inc.)                                                    Toronto, ON</p>
+                            <p class="italic">Wish (ContextLogic Inc.)                                                    Toronto, ON</p>
                         </li>
                         <li data-list-text="">
                             <h3 style="padding-top: 1pt;padding-left: 44pt;text-indent: -18pt;line-height: 112%;text-align: left;">Analyzed purchasing behavior <span class="p">of loyal customers to evaluate the feasibility of a subscription-based service and to determine its optimal </span>price point<span class="p">, which was projected to increase revenue by </span>45%<span class="p">.</span></h3>
