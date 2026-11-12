@@ -1,182 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2fb3127217.js" crossorigin="anonymous"></script>
-    <title>Yuna's Website</title>
-    <link rel="stylesheet" href="responsive-styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-    @font-face {
-      font-family: 'Mackina Med';
-      src: url('fonts/MackinacPro-Medium_26.otf') format('opentype');
-    }
-    @font-face {
-        font-family: 'Mackina Med Ita';
-        src: url('fonts/MackinacPro-MedItalic_18.otf') format('opentype');
-    }
-    @font-face {
-        font-family: 'Mackina';
-        src: url('fonts/P22MackinacPro-Book_25.otf') format('opentype');
-    }
-    </style>
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuna's World</title>
+
+  <link rel="stylesheet" href="responsive-styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Jersey+15&family=Noto+Sans:wght@400;500;600;700&family=VT323&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home" class="hero">
-        <div class="hero-content">
-        <h1><span class="hello">Hello!</span>I'm Yuna.</h1>
-        <p class="subtitle light">I'm a software engineer at <span class="accent-blue"> Otter.ai</span>working on improving search system and chat experiences over meeting transcripts. </p>
-        <p class="subtitle light">I studied computer science and statistics at the University of Waterloo. Now I spend most of my time playing tennis, climbing, and skiing, and occasionally think about what I want to build next.
+
+<body class="world-page">
+
+  <header class="world-header">
+    <a href="index.html" class="logo" aria-label="Home">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 11L12 2L22 11H19V21H14V15H10V21H5V11Z"
+              fill="currentColor"/>
+      </svg>
+    </a>
+
+    <div class="header-right">
+      <a href="https://github.com/yuna17c"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://linkedin.com/in/YOUR_USERNAME"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="mailto:yunachoi621@gmail.com" class="header-contact">SAY HELLO ↗</a>
+    </div>
+  </header>
+
+  <main class="world-main">
+    <section class="world-hero">
+
+      <div class="world-intro">
+        <p class="eyebrow">WELCOME TO</p>
+        <h1>Yuna's <span>World.</span></h1>
+        <p class="world-subtitle">
+          Software engineer working on RAG and LLMs. I like to explore and try new things.
         </p>
-        </div>
-        <div class="hero-buttons">
-          <div class="hero-actions">
-            <a href="resume.html" class="button hero-resume-btn">
-              <img class="hero-resume-btn__icon" src="img/file.png" alt="" width="390" height="280" />
-              <span class="hero-resume-btn__label">resume</span>
-            </a>
-          </div>
-          <div class="hero-actions">
-            <a href="#contact" class="button hero-resume-btn">
-              <img class="hero-resume-btn__icon" src="img/contact.png" alt="" width="390" height="280" />
-              <span class="hero-resume-btn__label">contact</span>
-            </a>
-          </div>
-        </div>
-    </section>
-    <section id="works" class="page-section">
-        <div class="section-inner">
-          <div class="section-header">
-            <img class="github-pixel" src="img/gh-logo.png" width="32" height="32" alt="GitHub" />
-            <h2 class="section-title">Projects</h2>
-          </div>
-          <div class="project-tiles">
-            <article class="project-tile">
-              <h3 class="project-name">Real-time ASL translation</h3>
-              <p>BorealisLSI Project &#183; mmpose &#183; GloFE &#183; LLM</p>
-              <p class="project-tile-links">
-                <a href="https://drive.google.com/file/d/1wpUek90LnAy8wsdcHKyntDR_ufkioa9M/view?usp=sharing" target="_blank" rel="noopener noreferrer">Details</a><span class="link-sep" aria-hidden="true"> · </span><a href="https://github.com/yuna17c/asl_translator" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </p>
-            </article>
-            <article class="project-tile">
-              <h3 class="project-name">RAG search engine</h3>
-              <p>Python &#183; Cohere Web Connectors</p>
-              <p class="project-tile-links">
-                <a href="https://devpost.com/software/co-there" target="_blank" rel="noopener noreferrer">Devpost</a><span class="link-sep" aria-hidden="true"> · </span><a href="https://github.com/yuna17c/RAG-Challenge" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </p>
-            </article>
-            <article class="project-tile">
-              <h3 class="project-name">Job Basket</h3>
-              <p>Python &#183; Semantic search</p>
-              <p class="project-tile-links">
-                <a href="https://devpost.com/software/job-basket" target="_blank" rel="noopener noreferrer">Devpost</a><span class="link-sep" aria-hidden="true"> · </span><a href="https://github.com/yuna17c/job-basket" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </p>
-            </article>
-            <article class="project-tile">
-              <h3 class="project-name">ML from scratch (PyTorch)</h3>
-              <p>Pytorch &#183; Jupyter Notebook</p>
-              <p class="project-tile-links">
-                <a href="https://github.com/yuna17c/ml_algorithms" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </p>
-            </article>
-            <article class="project-tile">
-              <h3 class="project-name">Reci.py</h3>
-              <p>Python &#183; Django &#183; React</p>
-              <p class="project-tile-links">
-                <a href="recipy.html">Details</a><span class="link-sep" aria-hidden="true"> · </span><a href="https://github.com/yuna17c/reci.py" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </p>
-            </article>
-          </div>
-        </div>
-    </section>
-    <section id="experiences" class="page-section">
-        <div class="section-inner">
-          <div class="section-header">
-            <h2 class="section-title">Experiences</h2>
-          </div>
-          <div class="table-container experience-table">
-            <table>
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="experience-job">Software Engineer @ Otter.AI</span><br>
-                    <span class="experience-desc">Search system and agentic chat for meeting notes.</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="experience-job">Software Engineer Intern @ Cohere</span><br>
-                    <span class="experience-desc">RAG tool with Slack and internal docs.</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="experience-job">Software Engineer Intern @ Safari AI</span><br>
-                    <span class="experience-desc">Computer vision model finetuning and data processing pipelines.</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="experience-job">Undergraduate research assistant @ University of Waterloo</span><br>
-                    <span class="experience-desc">Contextual autocompletion to conduct a study.</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="experience-job">Machine Learning Engineer Intern @ Alta ML</span><br>
-                    <span class="experience-desc">RAG search engine and structured data processing.</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="experience-job">Data Scientist @ Wish (Contextlogic)</span><br>
-                    <span class="experience-desc">Data analysis to identify decllining sales. </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-    </section>
-    <section id="contact" class="page-section page-section--contact">
-      <div class="section-inner">
-        <div class="section-header">
-          <img class="section-header-img" src="img/phone-icon.png" alt=""  />
-          <h2 class="section-title">Find me</h2>
-        </div>
-        <ul class="contact-links" role="list" aria-label="Contact links">
-          <li>
-            <a class="contact-links__row" href="mailto:yuna0617c@gmail.com">
-              <span class="contact-links__marker" aria-hidden="true">></span>
-              <span>email me at yuna0617c@gmail.com</span>
-            </a>
-          </li>
-          <li>
-            <a class="contact-links__row" href="https://www.linkedin.com/in/yuna-choi-699262146" target="_blank" rel="noopener noreferrer">
-              <span class="contact-links__marker" aria-hidden="true">></span>
-              <span>message me on linkedin</span>
-            </a>
-          </li>
-          <li>
-            <a class="contact-links__row" href="https://github.com/yuna17c" target="_blank" rel="noopener noreferrer">
-              <span class="contact-links__marker" aria-hidden="true">></span>
-              <span>find my projects on github</span>
-            </a>
-          </li>
-        </ul>
       </div>
+
+      <div class="game-scene">
+
+        <div class="scene-label scene-label--left">
+          <span>CHAPTER 01</span>
+          <span>Introduction</span>
+        </div>
+
+        <div class="scene-label scene-label--right">
+          <span>LOCATION</span>
+          <span>San Francisco Bay Area</span>
+        </div>
+
+        <!-- Pixel-art character -->
+        <div class="character-container" aria-label="Pixel-art character representing Yuna" role="img">
+          <svg class="pixel-character"
+               viewBox="0 0 160 200"
+               xmlns="http://www.w3.org/2000/svg"
+               shape-rendering="crispEdges">
+
+            <!-- Shadow -->
+            <ellipse cx="80" cy="187" rx="42" ry="7" fill="#263B38" opacity=".22"/>
+
+            <!-- Hair behind head -->
+            <rect x="60" y="25" width="40" height="5" fill="#49352F"/>
+            <rect x="50" y="30" width="60" height="5" fill="#49352F"/>
+            <rect x="40" y="35" width="80" height="5" fill="#49352F"/>
+            <rect x="35" y="40" width="90" height="10" fill="#49352F"/>
+            <rect x="30" y="50" width="100" height="70" fill="#49352F"/>
+            <rect x="35" y="120" width="90" height="10" fill="#49352F"/>
+
+            <!-- Face -->
+            <rect x="50" y="50" width="60" height="50" fill="#E8B58F"/>
+            <rect x="55" y="100" width="50" height="5" fill="#E8B58F"/>
+            <rect x="65" y="105" width="30" height="5" fill="#E8B58F"/>
+=
+            <!-- Hair fringe -->
+            <rect x="50" y="50" width="10" height="20" fill="#49352F"/>
+            <rect x="65" y="50" width="45" height="5" fill="#49352F"/>
+            <rect x="75" y="55" width="35" height="5" fill="#49352F"/>
+            <rect x="85" y="60" width="25" height="5" fill="#49352F"/>
+=
+            <!-- Eyes -->
+            <rect x="60" y="77" width="8" height="14" fill="#302C2A"/>
+            <rect x="92" y="77" width="8" height="14" fill="#302C2A"/>
+
+            <!-- Blush -->
+            <rect x="56" y="94" width="8" height="5" fill="#D98E7D"/>
+            <rect x="96" y="94" width="8" height="5" fill="#D98E7D"/>
+
+            <!-- Smile -->
+            <rect x="73" y="98" width="14" height="4" fill="#9B5B50"/>
+
+            <!-- Shirt -->
+            <rect x="55" y="110" width="50" height="5" fill="#D58C65"/>
+            <rect x="50" y="115" width="60" height="45" fill="#D58C65"/>
+            <rect x="45" y="120" width="5" height="20" fill="#D58C65"/>
+            <rect x="110" y="120" width="5" height="20" fill="#D58C65"/>
+            <rect x="40" y="130" width="5" height="10" fill="#D58C65"/>
+            <rect x="115" y="130" width="5" height="10" fill="#D58C65"/>
+
+            <!-- Shirt detail -->
+            <rect x="76" y="115" width="8" height="8" fill="#F2DDBD"/>
+
+            <!-- Arms -->
+            <rect x="43" y="140" width="10" height="8" fill="#E8B58F"/>
+            <rect x="107" y="140" width="10" height="8" fill="#E8B58F"/>
+
+            <!-- Pants -->
+            <rect x="50" y="150" width="60" height="20" fill="#526D68"/>
+            <rect x="56" y="166" width="20" height="13" fill="#526D68"/>
+            <rect x="84" y="166" width="20" height="13" fill="#526D68"/>
+
+            <!-- Shoes -->
+            <rect x="56" y="177" width="20" height="8" fill="#49352F"/>
+            <rect x="84" y="177" width="20" height="8" fill="#49352F"/>
+          </svg>
+
+          <span class="character-sparkle sparkle-one">✦</span>
+          <span class="character-sparkle sparkle-two">✧</span>
+        </div>
+
+        <div class="scene-ground"></div>
+
+        <div class="scene-hint">
+          <span class="hint-arrow">↓</span>
+          CHOOSE YOUR ADVENTURE
+        </div>
+
+      </div>
+
+      <!-- Main navigation -->
+      <nav class="quest-menu" aria-label="Main navigation">
+
+        <a href="work.html" class="quest-button quest-button--primary">
+          <span class="quest-icon">⚔</span>
+          <span class="quest-text">
+            <strong>WORK LOG</strong>
+            <small>My work & experience</small>
+          </span>
+          <span class="quest-arrow">↗</span>
+        </a>
+
+        <a href="me.html" class="quest-button quest-button--secondary">
+          <span class="quest-icon">✿</span>
+          <span class="quest-text">
+            <strong>SIDE QUESTS</strong>
+            <small>Life beyond coding</small>
+          </span>
+          <span class="quest-arrow">↗</span>
+        </a>
+
+      </nav>
+
+      <p class="world-footer">
+        <span>© YUNA</span>
+      </p>
+
     </section>
+  </main>
+
 </body>
 </html>
